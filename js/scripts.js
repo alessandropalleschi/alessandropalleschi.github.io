@@ -32,8 +32,3 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
-
-function myFunction() {
-  var popup = document.getElementById("myPopup");
-  popup.classList.toggle("show");
-}
