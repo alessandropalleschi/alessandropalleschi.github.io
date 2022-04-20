@@ -155,6 +155,7 @@ input, select, textarea {
 		border-bottom: dotted 1px rgba(255, 255, 255, 0.5);
 		text-decoration: none;
 		color: inherit;
+		word-break: break-all;
 	}
 
 		a:hover {
@@ -186,6 +187,11 @@ input, select, textarea {
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 			color: inherit;
 			text-decoration: none;
+			width: -moz-max-content;
+			width: -webkit-max-content;
+			width: -ms-max-content;
+			width: max-content;
+			word-break: normal;
 		}
 
 		h1.major, h2.major, h3.major, h4.major, h5.major, h6.major {
@@ -196,6 +202,7 @@ input, select, textarea {
 			width: max-content;
 			padding-bottom: 0.5rem;
 			margin: 0 0 2rem 0;
+			
 		}
 
 	h1 {
