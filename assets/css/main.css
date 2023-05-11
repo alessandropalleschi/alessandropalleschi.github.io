@@ -1551,7 +1551,7 @@ input, select, textarea {
 			transition: opacity 0.325s ease-in-out, transform 0.325s ease-in-out;
 			padding: 4.5rem 2.5rem 1.5rem 2.5rem ;
 			position: relative;
-			width: 90%;
+			width: 70%;
 			max-width: 100%;
 			background-color: rgba(27, 31, 34, 0.85);
 			border-radius: 4px;
@@ -1694,20 +1694,26 @@ input, select, textarea {
 		left: 10px;
 		color: #ffffff;
 		background-color: #696969a9;
-		font-size: 26px;
+		font-size: 24px;
 		font-weight: bold;
 		z-index: 1;
+		border-radius: 4px;
+		padding: 5px 5px;
+
 	  }
 	  .image-close {
 		position: absolute;
 		bottom: 10px;
 		left: 10px;
-		color: #b9b9b9;
+		color: #eeeded;
 		background-color: #9b9b9b74;
-		font-size: 20px;
+		font-size: 10px;
 		font-weight: bold;
 		z-index: 1;
-	  }
+		border-radius: 4px;
+		padding: 0px 0px;
+
+	}
 	   
   .image-tile img {
 	width: 90%; /* Ensure the image fills the tile */
