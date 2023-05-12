@@ -1694,7 +1694,7 @@ input, select, textarea {
 		left: 10px;
 		color: #ffffff;
 		background-color: #696969a9;
-		font-size: 24px;
+		font-size: 20px;
 		font-weight: bold;
 		z-index: 1;
 		border-radius: 4px;
@@ -1705,8 +1705,8 @@ input, select, textarea {
 		position: absolute;
 		bottom: 10px;
 		left: 10px;
-		color: #eeeded;
-		background-color: #9b9b9b74;
+		color: #141414;
+		background-color: #9b9b9bb2;
 		font-size: 10px;
 		font-weight: bold;
 		z-index: 1;
