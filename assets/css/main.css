@@ -1805,6 +1805,102 @@ input, select, textarea {
 	display: inline-block;
   }
 
+
+
+  .timeline {
+	width: 100%;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+  }
+  
+  .timeline ul {
+	list-style-type: none;
+	white-space: nowrap;
+	padding: 0;
+	display: inline-block;
+	transition: transform 0.3s ease;
+	transform: translateX(0);
+	overflow-x: hidden; /* Hide the horizontal scrollbar */
+	overflow-y: hidden; /* Hide the vertical scrollbar */
+ 
+}
+  
+  .timeline li {
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 40px;
+	position: relative;
+  }
+  
+  .timeline-content {
+	padding: 20px;
+	background: #5a5a5a;
+	border-radius: 4px;
+	width: 300px; /* Adjust the width as needed */
+	text-align: center;
+  }
+  
+  .timeline-content h3 {
+	font-size: 18px;
+	margin-top: 0;
+  }
+  
+  .timeline-content h4,
+  .timeline-content p {
+	margin: 0;
+  }
+  
+  .timeline-content:before {
+	content: '';
+	height: 2px;
+	width: 100%;
+	background: #999999;
+	position: absolute;
+	bottom: -10px;
+	left: 0;
+  }
+  .timeline-arrow.hidden {
+	display: block;
+  }
+  .timeline-arrow {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 30px;
+	height: 30px;
+	background-color: #f1f1f1;
+	border-radius: 50%;
+	cursor: pointer;
+	z-index: 1; /* Ensure arrows appear above the timeline */
+	display: flex;
+	justify-content: center;
+	align-items: center;  
+  }
+  
+  .timeline-arrow-left {
+	left: 10px;
+  }
+  
+  .timeline-arrow-right {
+	right: 10px;
+  }
+  
+  .timeline-arrow::after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border-style: solid;
+	border-width: 6px 0 6px 10px;
+	border-color: transparent transparent transparent #999999;
+  }
+  
+  .timeline-arrow-left::after {
+	transform: translate(-50%, -50%) rotate(180deg);
+  }
+  
   /* Modal Body */
   .modal-body {padding: 2px 16px;}
   

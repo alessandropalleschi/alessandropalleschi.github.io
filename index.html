@@ -67,14 +67,67 @@
 						co-founder of <a href="https://www.xstarmotion.com/index.html">XStar Motion</a>, an innovative
 						start-up which aims at transforming the way the motion of machines is planned.
 					</p>
-					<p>I received a master in Robotics and Automation (2018) and a bachelor in Electronics (2015) at the
-						University of Pisa, both cum laude.</p>
+
+					<div class="timeline">
+						<ul>
+							<li>
+								<div class="timeline-content">
+								  <h3>2023</h3>
+								  <h4>University of Pisa</h4>
+								  <p>Ph.D. in Robotics</p>
+								</div>
+							  </li>
+							<li>
+								<li>
+									<div class="timeline-content">
+									  <h3>2022</h3>
+									  <h4>Stanford University</h4>
+									  <p>Visiting Student Researcher</p>
+									</div>
+								  </li>
+								<li>
+									<li>
+										<div class="timeline-content">
+										  <h3>2021</h3>
+										  <h4>XStar Motion</h4>
+										  <p>Co-Founder</p>
+										</div>
+									  </li>
+									<li>
+										<li>
+											<div class="timeline-content">
+											  <h3>2018</h3>
+											  <h4>Research Center "E. Piaggio"</h4>
+											  <p>Junior Researcher</p>
+											</div>
+										  </li>
+										<li>	
+								<div class="timeline-content">
+								  <h3>2018</h3>
+								  <h4>University of Pisa</h4>
+								  <p>M.Sc. Robotics and Automation</p>
+								</div>
+							  </li>						
+						  <li>
+							<div class="timeline-content">
+							  <h3>2015</h3>
+							  <h4>University of Pisa</h4>
+							  <p>B.Sc. Electronics</p>
+							</div>
+						  </li>
+						  <!-- Add more <li> items for each timeline entry -->
+						</ul>
+					  </div>
+
 					<p>If you want to know more about my <a href="#work">research</a>, <a href="#projects">projects</a>,
 						and
 						<a href="https://scholar.google.it/citations?user=WrgOE88AAAAJ&hl=it">publications</a>, please
 						follow the associated links.
 					</p>
 				</div>
+
+
+				  
 			</article>
 
 			<!-- Work -->
@@ -540,6 +593,52 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 	<script src="assets/js/breakpoints.min.js"></script>
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
+
+	<script> 
+document.addEventListener("DOMContentLoaded", function() {
+  const timeline = document.querySelector(".timeline");
+  const timelineList = document.querySelector(".timeline ul");
+  const timelineArrows = document.querySelectorAll(".timeline-arrow");
+
+  let isMouseDown = false;
+  let startX;
+  let scrollLeft;
+
+  // Start tracking the mouse movement
+  timeline.addEventListener("mousedown", function(event) {
+    isMouseDown = true;
+    startX = event.pageX - timeline.offsetLeft;
+    scrollLeft = timeline.scrollLeft;
+  });
+
+  // Stop tracking the mouse movement
+  timeline.addEventListener("mouseup", function() {
+    isMouseDown = false;
+  });
+
+  // Track the mouse movement and scroll the timeline
+  timeline.addEventListener("mousemove", function(event) {
+    if (!isMouseDown) return;
+    event.preventDefault();
+    const x = event.pageX - timeline.offsetLeft;
+    const scrollAmount = x - startX;
+    timeline.scrollLeft = scrollLeft - scrollAmount;
+  });
+
+  // Add event listeners to the arrows
+  timelineArrows.forEach(function(arrow) {
+    arrow.addEventListener("click", function(event) {
+      event.preventDefault();
+      if (this.classList.contains("timeline-arrow-left")) {
+        timeline.scrollLeft -= 100;
+      } else if (this.classList.contains("timeline-arrow-right")) {
+        timeline.scrollLeft += 100;
+      }
+    });
+  });
+});
+
+</script>
 
 </body>
 
