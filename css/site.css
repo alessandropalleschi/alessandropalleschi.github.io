@@ -45,7 +45,7 @@ img { max-width: 100%; display: block; }
 .nav ul { display: flex; gap: 22px; list-style: none; margin: 0; padding: 0; }
 .nav ul a { color: var(--muted); font-size: 15px; font-weight: 500; }
 .nav ul a:hover { color: var(--text); text-decoration: none; }
-@media (max-width: 640px) { .nav ul { gap: 14px; } .nav ul a { font-size: 13px; } .nav .brand { display: none; } }
+@media (max-width: 640px) { .nav .wrap { height: auto; min-height: 56px; padding-top: 8px; padding-bottom: 8px; } .nav ul { gap: 4px 14px; flex-wrap: wrap; justify-content: center; width: 100%; } .nav ul a { font-size: 13px; } .nav .brand { display: none; } }
 
 /* Hero */
 .hero { padding: 72px 0 40px; }
@@ -127,3 +127,12 @@ button.btn { cursor: pointer; font: inherit; font-weight: 600; justify-self: sta
 .hp { position: absolute; left: -9999px; }
 
 footer { padding: 32px 0 48px; color: var(--muted); font-size: 14px; border-top: 1px solid var(--line); margin-top: 24px; }
+
+.tl .desc { font-size: 14.5px; color: var(--muted); margin-top: 4px; line-height: 1.5; }
+.skills { display: grid; grid-template-columns: 96px 1fr; gap: 8px 14px; margin: 0; font-size: 14.5px; }
+.skills dt { color: var(--muted); font-weight: 500; }
+.skills dd { margin: 0; }
+.pubs { list-style: none; margin: 0 0 14px; padding: 0; display: grid; gap: 14px; }
+.pubs li { display: grid; grid-template-columns: 48px 1fr; gap: 10px; font-size: 15.5px; line-height: 1.5; }
+.pubs .yr { color: var(--accent); font-weight: 600; }
+.note { color: var(--muted); font-size: 15px; }
