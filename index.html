@@ -1,438 +1,357 @@
-<!DOCTYPE HTML>
-<!--
-	Dimension by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-	<title>Alessandro Palleschi</title>
 	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<link rel="stylesheet" href="assets/css/main.css" />
-	<noscript>
-		<link rel="stylesheet" href="assets/css/noscript.css" />
-	</noscript>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Alessandro Palleschi · Robotics &amp; Robot Learning Engineer</title>
+	<meta name="description"
+		content="Alessandro Palleschi: senior robotics and robot learning engineer at Witty Machines in Zurich, Ph.D. in Robotics, co-founder of XStar Motion. Manipulation, motion planning, reinforcement and imitation learning." />
+	<meta property="og:title" content="Alessandro Palleschi · Robotics &amp; Robot Learning Engineer" />
+	<meta property="og:description"
+		content="Manipulation, motion planning and robot learning, from research prototypes to production machines. Co-founder of XStar Motion." />
+	<meta property="og:image" content="images/ale.jpg" />
+	<link rel="icon" href="assets/img/favicon.ico" />
+	<link rel="stylesheet" href="css/site.css" />
 </head>
 
-<body class="is-preload">
+<body>
 
-	<!-- Wrapper -->
-	<div id="wrapper">
+	<a class="skip" href="#about">Skip to content</a>
 
-		<!-- Header -->
-		<header id="header">
+	<nav class="nav">
+		<div class="wrap">
+			<a class="brand" href="#top">Alessandro Palleschi</a>
+			<ul>
+				<li><a href="#about">About</a></li>
+				<li><a href="#experience">Experience</a></li>
+				<li><a href="#research">Research</a></li>
+				<li><a href="#publications">Publications</a></li>
+				<li><a href="#projects">Portfolio</a></li>
+				<li><a href="#xstar">XStar</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</div>
+	</nav>
 
-			<span class="image"><img src="images/ale.png" alt="" /></span>
-			<div class="content">
-				<div class="inner">
-					<h1>Alessandro Palleschi</h1>
-					<p>Robotics Researcher</p>
+	<header class="hero" id="top">
+		<div class="wrap">
+			<img class="avatar" src="images/ale.jpg" alt="Portrait of Alessandro Palleschi" width="168" height="168" />
+			<div>
+				<p class="eyebrow">Robotics &amp; Robot Learning Engineer</p>
+				<h1>Alessandro Palleschi</h1>
+				<p class="lead">Senior Software Robotics Engineer at Witty Machines in Zurich. Ph.D. in Robotics, co-founder of XStar Motion. I take robotic systems from research prototypes to production machines.</p>
+				<div class="chips">
+					<a class="btn primary" href="#contact">Get in touch</a>
+					<a class="btn" href="https://scholar.google.it/citations?user=WrgOE88AAAAJ&hl=en">Google Scholar</a>
+					<a class="btn" href="https://github.com/alessandropalleschi">GitHub</a>
+					<a class="btn" href="https://www.linkedin.com/in/alessandro-palleschi/">LinkedIn</a>
 				</div>
 			</div>
-			<nav>
-				<ul>
-					<li><a href="#intro">Intro</a></li>
-					<li><a href="#work">Research</a></li>
-					<li><a href="#projects">Projects</a></li>
-					<li><a href="#xstar">XStar</a></li>
-					<li><a href="#contact">Contact</a></li>
-					<!--<li><a href="#elements">Elements</a></li>-->
-				</ul>
-			</nav>
-		</header>
-
-		<!-- Main -->
-		<div id="main">
-
-			<!-- Intro -->
-			<article id="intro">
-				<h2 class="major">About Me</h2>
-				<!-- 				<span class="image main"><img src="images/intro.jpg" alt="" /></span>
- -->
-				<div class="timeline">
-					<ul>
-						<li>
-							<div class="timeline-content">
-								<h3>2023-Current</h3>
-								<h4>Research Center "E. Piaggio"</h4>
-								<p>Post Doctoral Researcher</p>
-							</div>
-						</li>
-						<li>
-							<div class="timeline-content">
-								<h3>2021-Current</h3>
-								<h4>XStar Motion</h4>
-								<p>Co-Founder</p>
-							</div>
-						</li>
-						<li>
-							<div class="timeline-content">
-								<h3>2019-2023</h3>
-								<h4>University of Pisa</h4>
-								<p>Ph.D. in Robotics</p>
-							</div>
-						</li>
-						<li>
-							<div class="timeline-content">
-								<h3>02/2023-06/2023</h3>
-								<h4>University of Pisa</h4>
-								<p>Teaching Assistant</p>
-							</div>
-						</li>
-						<li>
-							<div class="timeline-content">
-								<h3>04/2022-09/2022</h3>
-								<h4>Stanford University</h4>
-								<p>Visiting Student Researcher</p>
-							</div>
-						</li>
-						<li>
-							<div class="timeline-content">
-								<h3>03/2020-06/2020</h3>
-								<h4>University of Pisa</h4>
-								<p>Teaching Assistant</p>
-							</div>
-						</li>
-						<li>
-							<div class="timeline-content">
-								<h3>2018-2019</h3>
-								<h4>Research Center "E. Piaggio"</h4>
-								<p>Junior Researcher</p>
-							</div>
-						</li>
-						<li>
-							<div class="timeline-content">
-								<h3>2015-2018</h3>
-								<h4>University of Pisa</h4>
-								<p>M.Sc. Robotics and Automation</p>
-							</div>
-						</li>
-						<li>
-							<div class="timeline-content">
-								<h3>2012-2015</h3>
-								<h4>University of Pisa</h4>
-								<p>B.Sc. Electronics</p>
-							</div>
-						</li>
-						<!-- Add more <li> items for each timeline entry -->
-					</ul>
-				</div>
-
-				<div class="content has-text-justified">
-					<p>Hi! I'm Alessandro, currently a robotics Ph.D. student at the University of Pisa and former
-						visiting
-						researcher at the Stanford Artificial Intelligence Laboratory (SAIL), Stanford University. I am
-						focused on developing innovative tools for planning and control of collaborative robots in
-						interaction-rich unstructured environments. I work on
-						autonomous manipulation and optimal trajectory planning for collaborative robots. My research
-						combines the fields of robotics, artificial intelligence, and human-robot interaction to create
-						solutions that enhance the capabilities of robots to work alongside humans and other autonomous
-						agents. With a strong foundation in motion planning, grasping, and manipulation, I am committed
-						to
-						advancing the state-of-the-art in this field and creating more efficient and effective robotic
-						systems.
-						<br />I am also
-						co-founder of <a href="https://www.xstarmotion.com/index.html">XStar Motion</a>, an innovative
-						start-up which aims at transforming the way the motion of machines is planned.
-					</p>
-					<p>If you want to know more about my <a href="#work">research</a>, <a href="#projects">projects</a>,
-						and
-						<a href="https://scholar.google.it/citations?user=WrgOE88AAAAJ&hl=it">publications</a>, please
-						follow the associated links.
-					</p>
-				</div>
-
-
-
-			</article>
-
-			<!-- Work -->
-			<article id="work">
-				<h2 class="major">Research</h2>
-				<span class="image main"><img src="images/pic01.jpg" alt="" /></span>
-				<div class="content has-text-justified">
-					<p>As a Ph.D. candidate in Robotics and Automation at the University of Pisa’s <a
-							href="https://www.centropiaggio.unipi.it/"> Research Center "E. Piaggio"</a>,
-						I have gained extensive experience developing planning and decision-making algorithms for
-						collaborative
-						robots working in unstructured environments. I have worked on various international
-						industry-oriented
-						research projects such as <a href="https://iliad-project.eu/">ILIAD</a>, <a
-							href="https://darko-project.eu/">DARKO</a>, and <a
-							href="https://project-sophia.eu/">SOPHIA</a>. I was responsible for designing,
-						implementing,
-						and
-						testing planning algorithms for <a
-							href="https://alessandropalleschi.github.io/wrapp_up/">dexterous manipulation</a> using a
-						dual-arm robotic platform.
-						Furthermore, I
-						have developed <a href="https://alessandropalleschi.github.io/graspitlikeapro/">grasp planning
-							algorithms</a> for robots equipped with rigid and
-						compliant
-						grippers and <a href="https://alessandropalleschi.github.io/safety/">optimized trajectory
-							planning algorithms</a> to ensure safe and efficient operations of
-						robots
-						working
-						alongside humans.
-						<br />My work resulted in several <a
-							href="https://scholar.google.it/citations?user=WrgOE88AAAAJ&hl=it">publications</a> on
-						leading
-						robotics journals,
-						such as RA-L, RA-M, and T-ASE and on international conferences such as ICRA, IROS, CASE, and
-						Humanoids.
-						<br /> Checkout my <a href="#projects">projects</a> to know more about my research!
-					</p>
-				</div>
-
-			</article>
-
-			<!-- About -->
-			<article id="xstar">
-				<h2 class="major">XStar Motion</h2>
-				<span class="image main"><img src="images/pic03.jpg" alt="" /></span>
-				<div class="content has-text-justified">
-					<p>My research on optimal trajectory planning lead to the creation of <a
-							href="https://www.xstarmotion.com/index.html">XStar Motion</a>, an innovative start-up which
-						aims at transforming the way the motion of machines is planned. </p>
-					<p>We developed X*Solve, an algorithm that evaluates the optimal trajectory over a working-cycle
-						path
-						fulfilling the machine's velocity, acceleration and jerk limits. This software works online,
-						providing the optimized references at the controller frequency, and is integrable on both robots
-						and
-						CNC machines.</p>
-					<p>XStar Motion fuses 20 years of automation expertise provided by EUROSOFT with cutting-edge
-						research
-						in motion planning and control conducted by leading researchers at University of Pisa.
-					</p>
-					<p>Today AI theory, algorithms implementation, and computational power, allow to plan the motion of
-						every machine to exploit its full power, and to update it for every single task, autonomously.
-						Xstar
-						Motion will bring this down to the automation industry.</p>
-				</div>
-
-			</article>
-
-
-			<article id="projects">
-				<h2 class="major">Projects</h2>
-				<div class="image-grid">
-					<div class="image-tile">
-						<div class="image-title">Data-Driven Grasping</div>
-						<img src="images/grasp.jpg">
-						<div class="tile-content">
-							<a href="https://alessandropalleschi.github.io/graspitlikeapro/" class="learn-more">Learn
-								More</a>
-						</div>
-						<div class="image-close">
-							<ul class="skills-list">
-								<li>ROS</li>
-								<li>Matlab</li>
-								<li>PCL</li>
-								<li>C++</li>
-								<li>Deep Learning</li>
-								<!-- Add more skills as needed -->
-							</ul>
-						</div>
-					</div>
-					<div class="image-tile">
-						<div class="image-title">Manipulation in Clutter</div>
-						<img src="images/clutter.png">
-						<div class="tile-content">
-							<a href="https://alessandropalleschi.github.io/Learning2Rearrange/" class="learn-more">Learn
-								More</a>
-						</div>
-
-						<div class="image-close">
-							<ul class="skills-list">
-								<li>Python</li>
-								<li>Pytorch</li>
-								<li>Reinforcement Learning</li>
-								<li>Pybullet</li>
-								<li>Deep Learning</li>
-								<!-- Add more skills as needed -->
-							</ul>
-						</div>
-
-					</div>
-					<div class="image-tile">
-						<div class="image-title">Dual-Arm Manipulation</div>
-						<img src="images/wrapp.jpg">
-						<div class="tile-content">
-							<a href="https://alessandropalleschi.github.io/wrapp_up/" class="learn-more">Learn
-								More</a>
-						</div>
-						<div class="image-close">
-							<ul class="skills-list">
-								<li>ROS</li>
-								<li>Inverse Kinematics</li>
-								<li>Manipulation Planning</li>
-								<li>Matlab</li>
-								<li>Simulink</li>
-								<!-- Add more skills as needed -->
-							</ul>
-						</div>
-
-					</div>
-
-					<div class="image-tile">
-						<div class="image-title">Planning for Multi-Robot Systems</div>
-						<img src="images/multi.png">
-						<div class="tile-content">
-							<a href="https://alessandropalleschi.github.io/highlevelplanning/" class="learn-more">Learn
-								More</a>
-						</div>
-						<div class="image-close">
-							<ul class="skills-list">
-								<li>ROS</li>
-								<li>A*</li>
-								<li>RRT</li>
-								<li>MoveIt</li>
-								<!-- Add more skills as needed -->
-							</ul>
-						</div>
-
-					</div>
-					<div class="image-tile">
-						<div class="image-title">Safety-aware Trajectory Planning</div>
-						<img src="images/safety.png">
-						<div class="tile-content">
-							<a href="https://alessandropalleschi.github.io/safety/" class="learn-more">Learn
-								More</a>
-						</div>
-						<div class="image-close">
-							<ul class="skills-list">
-								<li>ROS</li>
-								<li>OpenPose</li>
-								<li>Optimization</li>
-								<li>CasADI</li>
-								<li>Motion Planning</li>
-								<!-- Add more skills as needed -->
-							</ul>
-						</div>
-					</div>
-					<div class="image-tile">
-						<div class="image-title">Distributed Fleet Coordination</div>
-						<img src="images/coordination.png">
-						<div class="tile-content">
-							<a href="https://alessandropalleschi.github.io/DistributedFleets/
-					" class="learn-more">Learn
-								More</a>
-						</div>
-						<div class="image-close">
-							<ul class="skills-list">
-								<li>Motion Planning</li>
-								<li>Java</li>
-								<li>Distributed Coordination</li>
-								<li>Multi-robot Coordination</li>
-								<!-- Add more skills as needed -->
-							</ul>
-						</div>
-					</div>
-
-				</div>
-			</article>
-
-			<!-- About -->
-			<!-- Contact -->
-			<article id="contact">
-				<h2 class="major">Contact</h2>
-				<form method="post" action="https://forms.un-static.com/forms/16c0ca671989e52f56f64f6d41b4f545e999c739">
-					<div class="fields">
-						<div class="field half">
-							<label for="name">Name</label>
-							<input type="text" name="name" id="name" />
-						</div>
-						<div class="field half">
-							<label for="email">Email</label>
-							<input type="text" name="email" id="email" />
-						</div>
-						<div class="field">
-							<label for="message">Message</label>
-							<textarea name="message" id="message" rows="4"></textarea>
-						</div>
-					</div>
-					<ul class="actions">
-						<li><input type="submit" value="Send Message" class="primary" /></li>
-						<li><input type="reset" value="Reset" /></li>
-					</ul>
-				</form>
-				<ul class="icons">
-					<li><a href="https://scholar.google.it/citations?user=WrgOE88AAAAJ&hl=eng"
-							class="icon solid fa-graduation-cap"><span class="label">Scholar</span></a></li>
-					<li><a href="https://github.com/alessandropalleschi" class="icon brands fa-github"><span
-								class="label">GitHub</span></a></li>
-					<li><a href="https://www.linkedin.com/in/alessandro-palleschi/"
-							class="icon brands fa-linkedin"><span class="label">LinkedIN</span></a></li>
-				</ul>
-			</article>
-
 		</div>
+	</header>
 
-		<!-- Footer -->
-		<footer id="footer">
-			<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
-		</footer>
+	<main>
+		<section id="about">
+			<div class="wrap">
+				<h2>About</h2>
+				<div class="prose">
+					<p>I am a senior robotics and robot learning engineer specializing in manipulation, reinforcement
+						learning, imitation learning, motion planning and control. I work end to end across perception,
+						planning, control, ML, simulation and software infrastructure, and I have taken systems from
+						research prototypes to deployed production machines.</p>
+					<p>Today I am based in Zurich at <a href="https://witty-machines.com"><strong>Witty Machines</strong></a>, where I own the robotics software
+						stack of production dual-arm picking and packing systems. Before that I led manipulation at
+						Floating Robotics and held a postdoctoral and assistant professor position at the University of
+						Pisa, where I earned my Ph.D. in Robotics (with honors) and spent time as a visiting researcher at
+						Stanford.</p>
+					<p>I am also co-founder and scientific advisor of <a
+							href="https://www.xstarmotion.com/index.html">XStar Motion</a>, a start-up developing
+						industrial motion-optimization algorithms.</p>
+				</div>
+			</div>
+		</section>
 
-	</div>
+		<section id="experience">
+			<div class="wrap">
+				<h2>Experience &amp; education</h2>
+				<div class="cols">
+					<div>
+						<h3 class="tl-title">Work</h3>
+						<ul class="tl">
+							<li>
+								<div class="when">03/2025 – present</div>
+								<div class="what">Senior Software Robotics Engineer</div>
+								<div class="where"><a href="https://witty-machines.com">Witty Machines AG</a>, Switzerland</div>
+								<div class="desc">Own the end-to-end software stack for dual-arm picking and packing: perception, manipulation planning, trajectory optimization, control, simulation, CI and operator tooling. Deployed on four production case packers running at up to 30,000 eggs/hour.</div>
+							</li>
+							<li>
+								<div class="when">03/2024 – 03/2025</div>
+								<div class="what">Robot Control Engineer / Technical Lead, Manipulation</div>
+								<div class="where">Floating Robotics AG, Zurich · <a href="https://techxplore.com/news/2023-12-video-robot-greenhouse.amp">robot video</a></div>
+								<div class="desc">Led motion planning and control for autonomous greenhouse harvesting, contributing to a 40% increase in harvest efficiency. Evaluated ACT and VIOLA visuomotor policies on physical robots.</div>
+							</li>
+							<li>
+								<div class="when">06/2023 – 03/2024</div>
+								<div class="what">Postdoctoral Researcher, then Assistant Professor (RTDa)</div>
+								<div class="where"><a href="https://www.centropiaggio.unipi.it/">Università di Pisa, Research Center “E. Piaggio”</a></div>
+								<div class="desc">Data-driven grasp planning for soft robotic hands (92% grasp success on unseen objects), and decentralized multi-robot coordination.</div>
+							</li>
+							<li>
+								<div class="when">07/2021 – present</div>
+								<div class="what">Co-Founder and Scientific Advisor</div>
+								<div class="where"><a href="https://www.xstarmotion.com/index.html">XStar Motion s.r.l.</a>, Pisa</div>
+								<div class="desc">Industrial motion-optimization algorithms, achieving a 10% reduction in machine wear.</div>
+							</li>
+							<li>
+								<div class="when">04/2022 – 09/2022</div>
+								<div class="what">Visiting Student Researcher</div>
+								<div class="where"><a href="https://iprl.stanford.edu/">Stanford University, Interactive Perception and Robot Learning Lab</a></div>
+								<div class="desc">Manipulation in clutter with a visual deep RL policy combining pushing and pick-and-place, with Prof. Jeannette Bohg.</div>
+							</li>
+							<li>
+								<div class="when">10/2018 – 10/2019</div>
+								<div class="what">Junior Researcher</div>
+								<div class="where">Università di Pisa</div>
+								<div class="desc">ROS-based planning for bimanual manipulation and autonomous pallet picking on a dual-arm platform within the EU ILIAD project.</div>
+							</li>
+							<li>
+								<div class="when">2020 &amp; 2023</div>
+								<div class="what">Teaching Assistant</div>
+								<div class="where">Università di Pisa</div>
+							</li>
+						</ul>
+					</div>
+					<div>
+						<h3 class="tl-title">Education</h3>
+						<ul class="tl">
+							<li>
+								<div class="when">2019 – 2023</div>
+								<div class="what">Ph.D. in Robotics</div>
+								<div class="where">Università di Pisa · graduated with honors</div>
+							</li>
+							<li>
+								<div class="when">2015 – 2018</div>
+								<div class="what">M.Sc. Robotics and Automation Engineering</div>
+								<div class="where">Università di Pisa · 110/110 cum laude</div>
+							</li>
+							<li>
+								<div class="when">2012 – 2015</div>
+								<div class="what">B.Sc. Electronic Engineering</div>
+								<div class="where">Università di Pisa · 110/110 cum laude</div>
+							</li>
+						</ul>
+						<h3 class="tl-title" style="margin-top:28px">Skills</h3>
+						<dl class="skills">
+							<dt>Programming</dt><dd>C++, Python</dd>
+							<dt>Learning</dt><dd>Deep RL, imitation learning (ACT, VIOLA), PyTorch, Gym</dd>
+							<dt>Perception</dt><dd>Detection, segmentation, pose estimation, hand-eye calibration; OpenCV, Open3D, ONNX</dd>
+							<dt>Robotics</dt><dd>ROS / ROS 2, MoveIt 2, ros2_control, Pinocchio, PyBullet, Gazebo</dd>
+							<dt>Planning</dt><dd>Trajectory optimization, grasp planning, TOPP-RA, STOMP, MPC, CasADi, NLopt, SNOPT</dd>
+							<dt>Engineering</dt><dd>Linux, Git, Docker, CI/CD, automated testing, fault recovery</dd>
+						</dl>
+					</div>
+				</div>
+			</div>
+		</section>
 
-	<!-- BG -->
-	<div id="bg"></div>
+		<section id="research">
+			<div class="wrap">
+				<h2>Research</h2>
+				<div class="prose">
+					<p>My research focused on planning and decision-making algorithms for collaborative robots in
+						unstructured environments, within international, industry-oriented projects such as
+						<a href="https://iliad-project.eu/">ILIAD</a>, <a href="https://darko-project.eu/">DARKO</a> and
+						<a href="https://project-sophia.eu/">SOPHIA</a>. My thesis, “Shaping the Intelligence of
+						Collaborative Robots in Interaction-Rich Shared Environments”, was a finalist for the Georges
+						Giralt PhD Award.</p>
+				</div>
+				<div class="areas">
+					<div class="card area">
+						<h3>Dexterous manipulation</h3>
+						<p>Planning, implementing and testing manipulation algorithms on <a
+								href="https://alessandropalleschi.github.io/wrapp_up/">dual-arm platforms</a>.</p>
+					</div>
+					<div class="card area">
+						<h3>Grasp planning</h3>
+						<p><a href="https://alessandropalleschi.github.io/graspitlikeapro/">Grasp planners</a> for
+							robots with rigid and compliant grippers.</p>
+					</div>
+					<div class="card area">
+						<h3>Safe trajectory planning</h3>
+						<p><a href="https://alessandropalleschi.github.io/safety/">Optimal, safety-aware
+								trajectories</a> for robots working next to humans.</p>
+					</div>
+				</div>
+			</div>
+		</section>
 
-	<!-- Scripts -->
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/browser.min.js"></script>
-	<script src="assets/js/breakpoints.min.js"></script>
-	<script src="assets/js/util.js"></script>
-	<script src="assets/js/main.js"></script>
+		<section id="publications">
+			<div class="wrap">
+				<h2>Publications &amp; awards</h2>
+				<div class="cols">
+					<div>
+						<h3 class="tl-title">Selected publications</h3>
+						<ul class="pubs">
+							<li><span class="yr">2023</span><div><strong>A. Palleschi et al.</strong> Grasp it Like a Pro 2.0: A Data-Driven Approach Exploiting Basic Shape Decomposition and Human Data for Grasping Unknown Objects. <em>IEEE Transactions on Robotics</em>. <span class="plinks"><a href="https://alessandropalleschi.github.io/graspitlikeapro/">Project</a> · <a href="https://alessandropalleschi.github.io/graspitlikeapro/static/pdfs/paper.pdf">PDF</a></span></div></li>
+							<li><span class="yr">2022</span><div><strong>A. Palleschi et al.</strong> High-Level Planning for Object Manipulation With Multi Heterogeneous Robots in Shared Environments. <em>IEEE Robotics and Automation Letters</em>, 7(2), 3138–3145. <span class="plinks"><a href="https://alessandropalleschi.github.io/highlevelplanning/">Project</a></span></div></li>
+							<li><span class="yr">2020</span><div>M. Garabini, D. Caporale, V. Tincani, <strong>A. Palleschi</strong>, et al. WRAPP-up: a Dual-arm Robot for Intralogistics. <em>IEEE Robotics &amp; Automation Magazine</em>, 28(3), 50–66. <span class="plinks"><a href="https://doi.org/10.1109/MRA.2020.3015899">DOI</a> · <a href="https://alessandropalleschi.github.io/wrapp_up/">Project</a> · <a href="https://alessandropalleschi.github.io/wrapp_up/static/pdfs/paper.pdf">PDF</a></span></div></li>
+						</ul>
+						<p class="note">17 publications · 500+ citations · h-index 11 · <a href="https://scholar.google.it/citations?user=WrgOE88AAAAJ&hl=en">Full list on Google Scholar</a> · <a href="https://dblp.uni-trier.de/pid/251/7677.html">dblp</a></p>
+					</div>
+					<div>
+						<h3 class="tl-title">Selected awards</h3>
+						<ul class="pubs">
+							<li><span class="yr">2023</span><div>Finalist, <strong>Georges Giralt PhD Award</strong></div></li>
+							<li><span class="yr">2023</span><div>Honorable Mention, <strong>IEEE Transactions on Robotics King-Sun Fu Memorial Best Paper Award</strong></div></li>
+							<li><span class="yr">2023</span><div>Best Doctoral Thesis Scholarship, <strong>University of Pisa</strong></div></li>
+						</ul>
+						<h3 class="tl-title" style="margin-top:28px">Languages</h3>
+						<p class="note" style="margin:0">Italian (native) · English (advanced) · German (basic)</p>
+					</div>
+				</div>
+			</div>
+		</section>
 
-	<script>
-		document.addEventListener("DOMContentLoaded", function () {
-			const timeline = document.querySelector(".timeline");
-			const timelineList = document.querySelector(".timeline ul");
-			const timelineArrows = document.querySelectorAll(".timeline-arrow");
+		<section id="projects">
+			<div class="wrap">
+				<h2>Portfolio</h2>
+				<h3 class="sub">Industry work</h3>
+				<div class="grid industry">
+					<article class="card project ind">
+						<div class="body">
+							<span class="kind">Witty Machines · 2025 – present</span>
+							<h3>Dual-arm picking &amp; packing</h3>
+							<p>End-to-end software for production dual-arm case packers running at up to 30,000 eggs/hour: perception, collision-aware manipulation, time-optimal trajectories, control, simulation, CI and operator tooling.</p>
+							<ul class="tags"><li>ROS 2</li><li>MoveIt 2</li><li>ONNX</li><li>C++</li></ul>
+							<a class="more" href="https://witty-machines.com">Visit Witty Machines →</a>
+						</div>
+					</article>
+					<article class="card project ind">
+						<div class="body">
+							<span class="kind">Floating Robotics · 2024 – 2025</span>
+							<h3>Autonomous greenhouse harvesting</h3>
+							<p>Motion planning and control for a harvesting robot, contributing to a 40% increase in harvest efficiency and 24 kg/h harvesting rate, plus visuomotor policy evaluation (ACT, VIOLA).</p>
+							<ul class="tags"><li>Motion planning</li><li>Imitation learning</li><li>Control</li></ul>
+							<a class="more" href="https://techxplore.com/news/2023-12-video-robot-greenhouse.amp">Watch the robot →</a>
+						</div>
+					</article>
+					<article class="card project ind">
+						<div class="body">
+							<span class="kind">XStar Motion · 2021 – present</span>
+							<h3>X*Solve motion optimization</h3>
+							<p>Online time-optimal trajectory generation under velocity, acceleration and jerk limits for robots and CNC machines, achieving a 10% reduction in machine wear.</p>
+							<ul class="tags"><li>Trajectory optimization</li><li>Real-time</li><li>Industrial</li></ul>
+							<a class="more" href="https://www.xstarmotion.com/index.html">Visit XStar Motion →</a>
+						</div>
+					</article>
+				</div>
 
-			let isMouseDown = false;
-			let startX;
-			let scrollLeft;
+				<h3 class="sub">In the media</h3>
+				<ul class="press">
+					<li><a href="https://techxplore.com/news/2023-12-video-robot-greenhouse.amp">Video: A picking robot for the greenhouse</a><span>TechXplore · Floating Robotics, ETH Zurich spin-off</span></li>
+					<li><a href="https://hortidaily.com/article/9595226/new-picking-robot-for-the-greenhouse-in-pilot-phase">New picking robot for the greenhouse in pilot phase</a><span>HortiDaily</span></li>
+					<li><a href="https://www.futurefarming.com/tech-in-focus/a-picking-robot-for-the-swiss-greenhouse/">A picking robot for the Swiss greenhouse</a><span>Future Farming</span></li>
+				</ul>
 
-			// Start tracking the mouse movement
-			timeline.addEventListener("mousedown", function (event) {
-				isMouseDown = true;
-				startX = event.pageX - timeline.offsetLeft;
-				scrollLeft = timeline.scrollLeft;
-			});
+				<h3 class="sub">Research projects</h3>
+				<div class="grid">
 
-			// Stop tracking the mouse movement
-			timeline.addEventListener("mouseup", function () {
-				isMouseDown = false;
-			});
+					<article class="card project">
+						<div class="thumb"><img src="images/grasp.jpg" alt="Data-driven grasping" loading="lazy" /></div>
+						<div class="body">
+							<h3>Data-Driven Grasping</h3>
+							<ul class="tags"><li>ROS</li><li>Matlab</li><li>PCL</li><li>C++</li><li>Deep Learning</li></ul>
+							<div class="links"><a class="more" href="https://alessandropalleschi.github.io/graspitlikeapro/">Project page →</a> <a class="more2" href="https://alessandropalleschi.github.io/graspitlikeapro/static/pdfs/paper.pdf">Paper</a></div>
+						</div>
+					</article>
 
-			// Track the mouse movement and scroll the timeline
-			timeline.addEventListener("mousemove", function (event) {
-				if (!isMouseDown) return;
-				event.preventDefault();
-				const x = event.pageX - timeline.offsetLeft;
-				const scrollAmount = x - startX;
-				timeline.scrollLeft = scrollLeft - scrollAmount;
-			});
+					<article class="card project">
+						<div class="thumb"><img src="images/clutter.png" alt="Manipulation in clutter" loading="lazy" /></div>
+						<div class="body">
+							<h3>Manipulation in Clutter</h3>
+							<ul class="tags"><li>Python</li><li>PyTorch</li><li>Reinforcement Learning</li><li>PyBullet</li></ul>
+							<a class="more" href="https://alessandropalleschi.github.io/Learning2Rearrange/">Project page →</a>
+						</div>
+					</article>
 
-			// Add event listeners to the arrows
-			timelineArrows.forEach(function (arrow) {
-				arrow.addEventListener("click", function (event) {
-					event.preventDefault();
-					if (this.classList.contains("timeline-arrow-left")) {
-						timeline.scrollLeft -= 100;
-					} else if (this.classList.contains("timeline-arrow-right")) {
-						timeline.scrollLeft += 100;
-					}
-				});
-			});
-		});
+					<article class="card project">
+						<div class="thumb"><img src="images/wrapp.jpg" alt="Dual-arm manipulation" loading="lazy" /></div>
+						<div class="body">
+							<h3>Dual-Arm Manipulation</h3>
+							<ul class="tags"><li>ROS</li><li>Inverse Kinematics</li><li>Manipulation Planning</li><li>Matlab</li><li>Simulink</li></ul>
+							<div class="links"><a class="more" href="https://alessandropalleschi.github.io/wrapp_up/">Project page →</a> <a class="more2" href="https://alessandropalleschi.github.io/wrapp_up/static/pdfs/paper.pdf">Paper</a></div>
+						</div>
+					</article>
 
-	</script>
+					<article class="card project">
+						<div class="thumb"><img src="images/multi.png" alt="Multi-robot planning" loading="lazy" /></div>
+						<div class="body">
+							<h3>Planning for Multi-Robot Systems</h3>
+							<ul class="tags"><li>ROS</li><li>A*</li><li>RRT</li><li>MoveIt</li></ul>
+							<a class="more" href="https://alessandropalleschi.github.io/highlevelplanning/">Project page →</a>
+						</div>
+					</article>
 
+					<article class="card project">
+						<div class="thumb"><img src="images/safety.png" alt="Safety-aware trajectory planning" loading="lazy" /></div>
+						<div class="body">
+							<h3>Safety-aware Trajectory Planning</h3>
+							<ul class="tags"><li>ROS</li><li>OpenPose</li><li>Optimization</li><li>CasADi</li></ul>
+							<a class="more" href="https://alessandropalleschi.github.io/safety/">Project page →</a>
+						</div>
+					</article>
+
+					<article class="card project">
+						<div class="thumb"><img src="images/coordination.png" alt="Distributed fleet coordination" loading="lazy" /></div>
+						<div class="body">
+							<h3>Distributed Fleet Coordination</h3>
+							<ul class="tags"><li>Java</li><li>Motion Planning</li><li>Multi-robot Coordination</li></ul>
+							<a class="more" href="https://alessandropalleschi.github.io/DistributedFleets/">Project page →</a>
+						</div>
+					</article>
+
+				</div>
+			</div>
+		</section>
+
+		<section id="xstar">
+			<div class="wrap">
+				<h2>XStar Motion</h2>
+				<div class="card xstar prose">
+					<p>My research on optimal trajectory planning led to <a
+							href="https://www.xstarmotion.com/index.html">XStar Motion</a>, a start-up that aims to
+						transform the way the motion of machines is planned.</p>
+					<p>We developed <strong>X*Solve</strong>, an algorithm that computes the optimal trajectory along a
+						working-cycle path while respecting the machine's velocity, acceleration and jerk limits. It runs
+						online, delivering optimized references at the controller frequency, and integrates with both
+						robots and CNC machines.</p>
+					<p>XStar Motion combines 20 years of automation expertise from EUROSOFT with cutting-edge research in
+						motion planning and control from the University of Pisa. Today's AI theory, algorithms and
+						computing power make it possible to plan the motion of every machine to exploit its full
+						potential, and to update it autonomously for every task.</p>
+				</div>
+			</div>
+		</section>
+
+		<section id="contact">
+			<div class="wrap">
+				<h2>Contact</h2>
+				<form method="post" action="https://forms.un-static.com/forms/16c0ca671989e52f56f64f6d41b4f545e999c739">
+					<label>Name <input type="text" name="name" required autocomplete="name" /></label>
+					<label>Email <input type="email" name="email" required autocomplete="email" /></label>
+					<label>Message <textarea name="message" rows="5" required></textarea></label>
+					<button class="btn primary" type="submit">Send message</button>
+				</form>
+			</div>
+		</section>
+	</main>
+
+	<footer>
+		<div class="wrap">© <span id="year">2025</span> Alessandro Palleschi</div>
+	</footer>
+
+	<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
 </body>
 
 </html>
