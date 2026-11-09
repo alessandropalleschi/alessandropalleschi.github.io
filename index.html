@@ -12,6 +12,9 @@
 		content="Manipulation, motion planning and robot learning, from research prototypes to production machines. Co-founder of XStar Motion." />
 	<meta property="og:image" content="images/ale.jpg" />
 	<link rel="icon" href="assets/img/favicon.ico" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" />
 	<link rel="stylesheet" href="css/site.css" />
 </head>
 
@@ -28,9 +31,11 @@
 				<li><a href="#research">Research</a></li>
 				<li><a href="#publications">Publications</a></li>
 				<li><a href="#projects">Portfolio</a></li>
+				<li><a href="#videos">Videos</a></li>
 				<li><a href="#xstar">XStar</a></li>
 				<li><a href="#contact">Contact</a></li>
 			</ul>
+			<button class="theme" id="theme" type="button" aria-label="Toggle dark mode" title="Toggle dark mode">◐</button>
 		</div>
 	</nav>
 
@@ -49,6 +54,12 @@
 				</div>
 			</div>
 		</div>
+		<div class="wrap stats" aria-label="Highlights">
+			<div><strong>17</strong><span>publications</span></div>
+			<div><strong>500+</strong><span>citations</span></div>
+			<div><strong>11</strong><span>h-index</span></div>
+			<div><strong>30,000</strong><span>eggs/hour on deployed machines</span></div>
+		</div>
 	</header>
 
 	<main>
@@ -60,9 +71,9 @@
 						learning, imitation learning, motion planning and control. I work end to end across perception,
 						planning, control, ML, simulation and software infrastructure, and I have taken systems from
 						research prototypes to deployed production machines.</p>
-					<p>Today I am based in Zurich at <a href="https://witty-machines.com"><strong>Witty Machines</strong></a>, where I own the robotics software
+					<p>Today I am based in Zurich at <a href="https://www.witty-machines.com/"><strong>Witty Machines</strong></a>, where I own the robotics software
 						stack of production dual-arm picking and packing systems. Before that I led manipulation at
-						Floating Robotics and held a postdoctoral and assistant professor position at the University of
+						<a href="https://www.floatingrobotics.com/">Floating Robotics</a> and held a postdoctoral and assistant professor position at the University of
 						Pisa, where I earned my Ph.D. in Robotics (with honors) and spent time as a visiting researcher at
 						Stanford.</p>
 					<p>I am also co-founder and scientific advisor of <a
@@ -72,7 +83,7 @@
 			</div>
 		</section>
 
-		<section id="experience">
+		<section id="experience" class="alt">
 			<div class="wrap">
 				<h2>Experience &amp; education</h2>
 				<div class="cols">
@@ -82,13 +93,13 @@
 							<li>
 								<div class="when">03/2025 – present</div>
 								<div class="what">Senior Software Robotics Engineer</div>
-								<div class="where"><a href="https://witty-machines.com">Witty Machines AG</a>, Switzerland</div>
+								<div class="where"><a href="https://www.witty-machines.com/">Witty Machines AG</a>, Switzerland</div>
 								<div class="desc">Own the end-to-end software stack for dual-arm picking and packing: perception, manipulation planning, trajectory optimization, control, simulation, CI and operator tooling. Deployed on four production case packers running at up to 30,000 eggs/hour.</div>
 							</li>
 							<li>
 								<div class="when">03/2024 – 03/2025</div>
 								<div class="what">Robot Control Engineer / Technical Lead, Manipulation</div>
-								<div class="where">Floating Robotics AG, Zurich · <a href="https://techxplore.com/news/2023-12-video-robot-greenhouse.amp">robot video</a></div>
+								<div class="where"><a href="https://www.floatingrobotics.com/">Floating Robotics AG</a>, Zurich · <a href="https://www.youtube.com/watch?v=HbW_6PasOac">robot video</a></div>
 								<div class="desc">Led motion planning and control for autonomous greenhouse harvesting, contributing to a 40% increase in harvest efficiency. Evaluated ACT and VIOLA visuomotor policies on physical robots.</div>
 							</li>
 							<li>
@@ -224,7 +235,7 @@
 							<h3>Dual-arm picking &amp; packing</h3>
 							<p>End-to-end software for production dual-arm case packers running at up to 30,000 eggs/hour: perception, collision-aware manipulation, time-optimal trajectories, control, simulation, CI and operator tooling.</p>
 							<ul class="tags"><li>ROS 2</li><li>MoveIt 2</li><li>ONNX</li><li>C++</li></ul>
-							<a class="more" href="https://witty-machines.com">Visit Witty Machines →</a>
+							<div class="links"><a class="more" href="https://www.witty-machines.com/">Visit Witty Machines →</a> <a class="more2" href="https://www.youtube.com/@Witty-Machines">YouTube</a></div>
 						</div>
 					</article>
 					<article class="card project ind">
@@ -233,7 +244,7 @@
 							<h3>Autonomous greenhouse harvesting</h3>
 							<p>Motion planning and control for a harvesting robot, contributing to a 40% increase in harvest efficiency and 24 kg/h harvesting rate, plus visuomotor policy evaluation (ACT, VIOLA).</p>
 							<ul class="tags"><li>Motion planning</li><li>Imitation learning</li><li>Control</li></ul>
-							<a class="more" href="https://techxplore.com/news/2023-12-video-robot-greenhouse.amp">Watch the robot →</a>
+							<div class="links"><a class="more" href="https://www.youtube.com/watch?v=HbW_6PasOac">Watch the robot →</a> <a class="more2" href="https://www.floatingrobotics.com/">Website</a></div>
 						</div>
 					</article>
 					<article class="card project ind">
@@ -315,7 +326,41 @@
 			</div>
 		</section>
 
-		<section id="xstar">
+		<section id="videos" class="alt">
+			<div class="wrap">
+				<h2>Videos</h2>
+				<p class="section-lead">Machines I have worked on, in action. Click a video to play it here; the player loads only when you do.</p>
+				<div class="vgrid">
+					<a class="vid card" href="https://www.youtube.com/watch?v=pLC6Lw6EMHU" data-id="pLC6Lw6EMHU" data-title="Case Packer with Destacker and Stacker">
+						<span class="thumb"><img src="https://i.ytimg.com/vi/pLC6Lw6EMHU/hqdefault.jpg" alt="" loading="lazy" /><span class="play" aria-hidden="true">▶</span></span>
+						<span class="meta"><strong>Case Packer with Destacker and Stacker</strong><span>Witty Machines · 2026</span></span>
+					</a>
+					<a class="vid card" href="https://www.youtube.com/watch?v=CjV__gI9Md8" data-id="CjV__gI9Md8" data-title="How egg cartons are filled">
+						<span class="thumb"><img src="https://i.ytimg.com/vi/CjV__gI9Md8/hqdefault.jpg" alt="" loading="lazy" /><span class="play" aria-hidden="true">▶</span></span>
+						<span class="meta"><strong>How egg cartons are filled</strong><span>Witty Machines · 2026</span></span>
+					</a>
+					<a class="vid card" href="https://www.youtube.com/watch?v=N5st26yynec" data-id="N5st26yynec" data-title="Witty Machines – Egg Case Packer">
+						<span class="thumb"><img src="https://i.ytimg.com/vi/N5st26yynec/hqdefault.jpg" alt="" loading="lazy" /><span class="play" aria-hidden="true">▶</span></span>
+						<span class="meta"><strong>Witty Machines – Egg Case Packer</strong><span>Witty Machines · 2026</span></span>
+					</a>
+					<a class="vid card" href="https://www.youtube.com/watch?v=HbW_6PasOac" data-id="HbW_6PasOac" data-title="Tomato harvesting and de-leafing with one robot">
+						<span class="thumb"><img src="https://i.ytimg.com/vi/HbW_6PasOac/hqdefault.jpg" alt="" loading="lazy" /><span class="play" aria-hidden="true">▶</span></span>
+						<span class="meta"><strong>Tomato harvesting and de-leafing with one robot</strong><span>Floating Robotics · 2025</span></span>
+					</a>
+					<a class="vid card" href="https://www.youtube.com/watch?v=VPVcPwMBIew" data-id="VPVcPwMBIew" data-title="Cherry tomato harvesting in greenhouses">
+						<span class="thumb"><img src="https://i.ytimg.com/vi/VPVcPwMBIew/hqdefault.jpg" alt="" loading="lazy" /><span class="play" aria-hidden="true">▶</span></span>
+						<span class="meta"><strong>Cherry tomato harvesting in greenhouses</strong><span>Floating Robotics · 2023</span></span>
+					</a>
+					<a class="vid card" href="https://www.youtube.com/watch?v=1UzNS_MMdsM" data-id="1UzNS_MMdsM" data-title="Packing 6s egg cartons into cardboard boxes">
+						<span class="thumb"><img src="https://i.ytimg.com/vi/1UzNS_MMdsM/hqdefault.jpg" alt="" loading="lazy" /><span class="play" aria-hidden="true">▶</span></span>
+						<span class="meta"><strong>Packing 6s egg cartons into cardboard boxes</strong><span>Witty Machines · 2026</span></span>
+					</a>
+				</div>
+				<p class="note" style="margin-top:20px"><a href="https://www.youtube.com/@Witty-Machines">Witty Machines on YouTube</a> · <a href="https://www.youtube.com/@FloatingRobotics">Floating Robotics on YouTube</a></p>
+			</div>
+		</section>
+
+		<section id="xstar" class="alt">
 			<div class="wrap">
 				<h2>XStar Motion</h2>
 				<div class="card xstar prose">
@@ -343,6 +388,12 @@
 					<label>Message <textarea name="message" rows="5" required></textarea></label>
 					<button class="btn primary" type="submit">Send message</button>
 				</form>
+				<div class="chips" style="margin-top:28px">
+					<a class="btn" href="https://scholar.google.it/citations?user=WrgOE88AAAAJ&hl=en">Google Scholar</a>
+					<a class="btn" href="https://github.com/alessandropalleschi">GitHub</a>
+					<a class="btn" href="https://www.linkedin.com/in/alessandro-palleschi/">LinkedIn</a>
+					<a class="btn" href="https://www.youtube.com/@Witty-Machines">Witty Machines on YouTube</a>
+				</div>
 			</div>
 		</section>
 	</main>
@@ -351,7 +402,50 @@
 		<div class="wrap">© <span id="year">2025</span> Alessandro Palleschi</div>
 	</footer>
 
-	<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+	<script>
+		document.getElementById("year").textContent = new Date().getFullYear();
+
+		// Theme toggle (persisted when storage is available)
+		var root = document.documentElement;
+		try { var saved = localStorage.getItem("theme"); if (saved) root.setAttribute("data-theme", saved); } catch (e) { }
+		document.getElementById("theme").addEventListener("click", function () {
+			var dark = root.getAttribute("data-theme") === "dark" ||
+				(!root.getAttribute("data-theme") && matchMedia("(prefers-color-scheme: dark)").matches);
+			var next = dark ? "light" : "dark";
+			root.setAttribute("data-theme", next);
+			try { localStorage.setItem("theme", next); } catch (e) { }
+		});
+
+		// Click-to-load YouTube players (privacy-friendly, nothing loads until clicked)
+		document.querySelectorAll(".vid").forEach(function (a) {
+			a.addEventListener("click", function (e) {
+				e.preventDefault();
+				var f = document.createElement("iframe");
+				f.src = "https://www.youtube-nocookie.com/embed/" + a.dataset.id + "?autoplay=1&rel=0";
+				f.title = a.dataset.title;
+				f.allow = "autoplay; encrypted-media; picture-in-picture; fullscreen";
+				f.allowFullscreen = true;
+				f.referrerPolicy = "strict-origin-when-cross-origin";
+				a.querySelector(".thumb").replaceChildren(f);
+				a.classList.add("playing");
+			});
+		});
+
+		// Highlight the nav link of the section in view
+		var links = {};
+		document.querySelectorAll(".nav ul a").forEach(function (l) { links[l.getAttribute("href").slice(1)] = l; });
+		if ("IntersectionObserver" in window) {
+			var io = new IntersectionObserver(function (entries) {
+				entries.forEach(function (en) {
+					if (en.isIntersecting && links[en.target.id]) {
+						Object.values(links).forEach(function (l) { l.classList.remove("active"); });
+						links[en.target.id].classList.add("active");
+					}
+				});
+			}, { rootMargin: "-45% 0px -50% 0px" });
+			document.querySelectorAll("main section").forEach(function (sec) { io.observe(sec); });
+		}
+	</script>
 </body>
 
 </html>
